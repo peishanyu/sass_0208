@@ -1,0 +1,49 @@
+@font-face {
+  font-family: 'pattale';
+  src:  url('../font/pattale.eot?dtz4i0');
+  src:  url('../font/pattale.eot?dtz4i0#iefix') format('embedded-opentype'),
+    url('../font/pattale.ttf?dtz4i0') format('truetype'),
+    url('../font/pattale.woff?dtz4i0') format('woff'),
+    url('../font/pattale.svg?dtz4i0#pattale') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'pattale' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  font-size: 25px;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-ic-contact:before {
+  content: "\e900";
+}
+.icon-ic-logo:before {
+  content: "\e901";
+}
+.icon-ic-lookbook:before {
+  content: "\e902";
+}
+.icon-ic-menu:before {
+  content: "\e903";
+}
+.icon-ic-search:before {
+  content: "\e904";
+}
+.icon-ic-brand:before {
+  content: "\e905";
+}
+.icon-ic-bag:before {
+  content: "\e906";
+}

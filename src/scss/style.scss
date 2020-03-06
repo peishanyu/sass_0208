@@ -1,3 +1,9 @@
+@import "_variable.scss";
+@import "_flexbox.scss";
+@import "_dataAttribute.scss";
+@import "_mediaQueries.scss";
+
+
 /* col width */
 @for $i from 1 through 20 {
   [data-width="#{$i * 5}"] {
@@ -27,7 +33,7 @@ html {
   height: 100%;
 
   body {
-    font-family: "Quicksand", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "icomoon", "Quicksand", "Helvetica Neue", Helvetica, Arial, sans-serif;
     touch-action: manipulation;
     height: 100%;
     background-color:#093B2C;
@@ -46,6 +52,10 @@ html {
   height:45px;
   background: url(../img/header/bg-header.svg) repeat-x;
   padding:10px;
+
+  [class^="icon-"], [class*=" icon-"], span {
+    color: #FADC91;
+  }
 
   .ic {
     img {cursor:pointer;}
@@ -66,7 +76,8 @@ html {
 
 
 .container {
-  overflow: auto;
+  flex: 1;
+  overflow-y: auto;
 
   .submenu {
     @include flexBox(row,space-between);
@@ -162,7 +173,14 @@ html {
   @include flexBox(row,space-between);
   padding: 10px;
   height: 45px;
-  background-color: #033425;
+  background-color: #174c3d;
+
+  [class^="icon-"], [class*=" icon-"], span {
+    color: #FADC91;
+    font-weight: 500;
+    text-transform:uppercase;
+    letter-spacing: 0;
+  }
 }
 
 $iconSetFooter: 'brand', 'contact', 'lookbook';
