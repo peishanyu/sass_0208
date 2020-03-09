@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="2" height="45" viewBox="0 0 2 45">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="矩形_42" data-name="矩形 42" width="2" height="45" transform="translate(32 -220)" fill="#fff"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#225546"/>
+      <stop offset="1" stop-color="#093b2c"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ffffc1"/>
+      <stop offset="0.487" stop-color="#dab672"/>
+      <stop offset="0.797" stop-color="#b88849"/>
+      <stop offset="1" stop-color="#e0b66c"/>
+    </linearGradient>
+  </defs>
+  <g id="bg-header" transform="translate(-32 220)" clip-path="url(#clip-path)">
+    <g id="header" transform="translate(-201 -220)">
+      <path id="路径_9" data-name="路径 9" d="M0,0H375V45H0Z" fill="url(#linear-gradient)"/>
+      <rect id="矩形_34" data-name="矩形 34" width="375" height="1" transform="translate(0 44)" fill="url(#linear-gradient-2)"/>
+    </g>
+  </g>
+</svg>
