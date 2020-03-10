@@ -1,9 +1,6 @@
-$pc-media:1200px;
-$pcs-media:1199px;
-
-$pad-media:1180px;
-$pads-media:759px;
-
-$phone-media:480px;
-$phones-media:479px;
-
+$iphoneX: "screen and (min-width: 375px) and (min-height: 812px)";
+@mixin iphoneX {
+    @media #{$iphoneX} {
+        @content;
+    }
+}

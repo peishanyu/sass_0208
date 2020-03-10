@@ -26,6 +26,10 @@
     }
 }
 
+@mixin boxSizing {
+    box-sizing: border-box;
+}
+
 .row {
     @include boxSizing;
 
