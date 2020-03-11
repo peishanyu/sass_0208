@@ -15,13 +15,12 @@
 </head>
 <body>
 	<div class="row outer vertical">
-
 		<div class="top_menu">
 			<div class="row horizontal" data-row-count="2">
 				<div class="data_row">
 					<div class="row horizontal" data-row-count="2">
 						<div class="data_row userInfo">
-							<div class="row horizontal center" data-row-count="4">
+							<div class="row horizontal center">
 								<div><img class="avatar" src="img/avatar.jpg"/></div>
 								<div class="name">
 									<span>萬中選一小仙女</span>
@@ -46,11 +45,26 @@
 					</div>
 				</div>
 				<div class="data_row row horizontal">
-					<div><img src="img/top_menu_01.png"/></div>
-					<div><img src="img/top_menu_02.png"/></div>
-					<div><img src="img/top_menu_03.png"/></div>
-					<div><img src="img/top_menu_04.png"/></div>
-					<div><img src="img/top_menu_05.png"/></div>
+					<div class="relative animateBeat">
+						<div class=""></div>
+						<img src="img/top_menu_01.png"/>
+					</div>
+					<div class="relative animateBeat">
+						<div class="badge">8</div>
+						<img src="img/top_menu_02.png"/>
+					</div>
+					<div class="relative animateBeat">
+						<div class="new"></div>
+						<img src="img/top_menu_03.png"/>
+					</div>
+					<div class="relative animateBeat">
+						<div class="new"></div>
+						<img src="img/top_menu_04.png"/>
+					</div>
+					<div class="relative animateBeat">
+						<div class="badge">9+</div>
+						<img src="img/top_menu_05.png"/>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -59,90 +73,135 @@
 			<div class="dailyGift">
 				<div><img src="img/daily_quest_header.png"/></div>
 
-				<div class="giftItem active">
-					<div class="row horizontal v_center" data-row-count="10">
-						<img class="deco" src="img/get_reward_btn.png"/>
-						<img class="tip" src="img/gift1_active.svg"/>
+				<div class="giftItem animateBeat">
+					<div class="inner">
+						<div class="row horizontal v_center" data-row-count="10">
+							<img class="deco" src="img/get_reward_btn.png"/>
+							<img class="tip" src="img/gift1_active.svg"/>
+						</div>
+						<img class="fish" src="img/fish_1.png"/>
 					</div>
-					<img class="fish" src="img/fish_1.png"/>
+					<img class="showOn" src="img/quest_bg_blur.png"/>
+				</div>
+				
+
+				<div class="giftItem">
+					<div class="inner">
+						<div class="row horizontal v_center" data-row-count="10">
+							<img class="deco" src="img/lock.png"/>
+							<img class="tip" src="img/gift2.svg"/>
+						</div>
+						<img class="fish" src="img/fish_2.png"/>
+					</div>
+					<img class="showOff" src="img/quest_bg_blur.png"/>
 				</div>
 
 				<div class="giftItem">
-					<div class="row horizontal v_center" data-row-count="10">
-						<img class="deco" src="img/get_reward_btn.png"/>
-						<img class="tip" src="img/gift2.svg"/>
+					<div class="inner">
+						<div class="row horizontal v_center" data-row-count="10">
+							<img class="deco" src="img/lock.png"/>
+							<img class="tip" src="img/gift3.svg"/>
+						</div>
+						<img class="fish" src="img/fish_3.png"/>
 					</div>
-					<img class="fish" src="img/fish_2.png"/>
+					<img class="showOff" src="img/quest_bg_blur.png"/>
 				</div>
+
 				<div class="giftItem">
-					<div class="row horizontal v_center" data-row-count="10">
-						<img class="deco" src="img/lock.png"/>
-						<img class="tip" src="img/gift3.svg"/>
+					<div class="inner">
+						<div class="row horizontal v_center" data-row-count="10">
+							<img class="deco" src="img/lock.png"/>
+							<img class="tip" src="img/gift4.svg"/>
+						</div>
+						<img class="fish" src="img/treasurebox.png"/>	
 					</div>
-					<img class="fish" src="img/fish_3.png"/>
+					<img class="showOff" src="img/quest_bg_blur.png"/>
 				</div>
-				<div class="giftItem">
-					<div class="row horizontal v_center" data-row-count="10">
-						<img class="deco" src="img/lock.png"/>
-						<img class="tip" src="img/gift4.svg"/>
-					</div>
-					<img class="fish" src="img/treasurebox.png"/>
-				</div>
+
 			</div>
 
 			<div class="row horizontal gameType">
-				<div><img src="img/game01.png"/></div>
-				<div><img src="img/game02.png"/></div>
-				<div><img src="img/game03.png"/></div>
+				<div class="animateBeat"><img src="img/game01.png"/></div>
+				<div class="animateBeat"><img src="img/game02.png"/></div>
+				<div class="animateBeat"><img src="img/game03.png"/></div>
 			</div>
 		</div>
 
 		<div class="footer">
-			<div class="row horizontal" data-row-count="10">
-
+			<div class="row horizontal">
 				<div class="chatLog">
-
 					<div>
-
-						<div>
-							<div class="row horizontal" data-space-vertical="1rem">
+						<div class="scroll">
+							<div class="row horizontal v_center" data-space-vertical="1rem">
 								<div class="data_row warning">系統</div>
 								<div class="green">充值滿額送！2019/10/20前充值滿3,000元的玩家，即可獲得「遠洋大物獵人」禮包！</div>
 							</div>
 	
-							<div class="row horizontal" data-space-vertical="1rem">
+							<div class="row horizontal v_center" data-space-vertical="1rem">
 								<div class="info">世界</div>
-								<div class="green">「<span>你知道我知道獨眼龍也知道</span>」擊殺<span>黃金鎚頭鯊！</span></div>
+								<div>「<span class="lightblue">你知道我知道獨眼龍也知道</span>」擊殺<span class="yellow">黃金鎚頭鯊！</span></div>
 							</div>
 	
-							<div class="row horizontal">
+							<div class="row horizontal v_center" data-space-vertical="1rem">
 								<div class="error">船隊</div>
-								<div class="green"><span>是不是到公海了：</span>......被截胡了</div>
+								<div><span class="orange">是不是到公海了：</span>......被截胡了</div>
+							</div>
+							<div class="row horizontal v_center" data-space-vertical="1rem">
+								<div class="data_row warning">系統</div>
+								<div class="green">充值滿額送！2019/10/20前充值滿3,000元的玩家，即可獲得「遠洋大物獵人」禮包！</div>
+							</div>
+	
+							<div class="row horizontal v_center" data-space-vertical="1rem">
+								<div class="info">世界</div>
+								<div>「<span class="lightblue">你知道我知道獨眼龍也知道</span>」擊殺<span class="yellow">黃金鎚頭鯊！</span></div>
+							</div>
+	
+							<div class="row horizontal v_center" data-space-vertical="1rem">
+								<div class="error">船隊</div>
+								<div><span class="orange">是不是到公海了：</span>......被截胡了</div>
 							</div>
 						</div>
 
-						<div>
+						<div class="row horizontal">
 							<input type="text" name="message" value="只好幫QQ"/>
+							<img class="inputSent click" src="img/ic-sent.svg"/>
 						</div>
 					</div>
 					
 					<div class="setting">
-						<div><img src="img/icon_arrow_up.svg"/></div>
-						<div><img src="img/icon_config.svg"/></div>
+						<div><img class="click" src="img/icon_arrow_up.svg"/></div>
+						<div><img class="click" src="img/icon_config.svg" onclick=""/></div>
 					</div>
-
 				</div>
 				
-				<div class="data_row"></div>
-				<div class="data_row"></div>
 
-				<div class="row horizontal bottom">
-					<div><img src="img/bottom_menu_01.png"/></div>
-					<div><img src="img/bottom_menu_02.png"/></div>
-					<div><img src="img/bottom_menu_03.png"/></div>
-					<div><img src="img/bottom_menu_04.png"/></div>
-					<div><img src="img/bottom_menu_05.png"/></div>
-					<div><img src="img/bottom_menu_06.png"/></div>
+
+
+				<div class="row horizontal bottom_right">
+					<div class="tab">
+						<img src="img/ic-group.svg"/>
+						<span>社群</span>
+					</div>
+					<div class="tab">
+						<img src="img/ic-event.svg"/>
+						<span>任務</span>
+					</div>
+					<div class="tab">
+						<img src="img/ic-rank.svg"/>
+						<span>總排名</span>
+					</div>
+					<div class="tab">
+						<img src="img/ic-book.svg"/>
+						<span>圖鑑</span>
+					</div>
+					<div class="tab">
+						<img src="img/ic-setting.svg"/>
+						<span>設定</span>
+					</div>
+					<div class="tab">
+						<img src="img/ic-logout.svg"/>
+						<span>登出</span>
+					</div>
 				</div>
 			</div>
 		</div>

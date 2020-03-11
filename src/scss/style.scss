@@ -4,6 +4,44 @@
 @import "_mediaQueries.scss";
 
 img {max-width: 100%;}
+.relative {position: relative;}
+
+.animateBeat:hover {
+  cursor: pointer;
+  animation-name:heartBeat;
+  animation-duration:.8s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes heartBeat{
+  0% {transform: scale(1);}
+  50% {transform: scale(.9);}
+  100% {transform: scale(1);}
+}
+
+.click:hover {cursor: pointer;}
+.click:active {transform: scale(.95)}
+
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 4px;
+  border: #062c46 solid 2px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #062c46; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+
+
 
 html {
   touch-action: manipulation;
@@ -26,6 +64,32 @@ html {
   .top_menu {
     height: 22vh;
 
+
+    .badge {
+      position: absolute;
+      right: 2vw;
+      bottom: 6vh;
+      width: 36px;
+      height: 36px;
+      background: url(../img/count_bg.svg) no-repeat;
+      color: #Fff;
+      font-weight: 700;
+      font-size: 1.2rem;
+      text-align: center;
+      line-height: 1.75;
+      z-index: 5;
+    }
+
+    .new {
+      position: absolute;
+      right: 1vw;
+      bottom: 6.5vh;
+      width: 50px;
+      height: 20px;
+      background: url(../img/new.svg) no-repeat;
+      z-index: 5;
+    }
+
     .userInfo {
       position: relative;
       padding: 1rem .5rem;
@@ -35,7 +99,7 @@ html {
       color: #fff;
 
       .avatar {
-        width: 5vw;
+        width: 6vw;
         border-radius: 100rem;
         border: 2px solid #73599c;
       }
@@ -124,12 +188,28 @@ html {
 
       .giftItem {
         position: relative;
-        height: 11vh;
-        margin: 4px 0;
-        padding: 1.6rem .5rem;
-        background: url(../img/quest_bg.png) no-repeat;
-        background-size: cover;
-  
+
+        .inner {
+          height: 11vh;
+          margin: 4px 0;
+          padding: 1.6rem .5rem;
+          background: url(../img/quest_bg.png) no-repeat;
+          background-size: cover;
+        }
+
+        .showOn {
+          position: absolute;
+          z-index: -1;
+          top: 0;
+          left: 0;
+          -webkit-filter: blur(12px); /* Safari 6.0 - 9.0 */
+          filter: blur(12px);
+        }
+
+        .showOff {
+          display: none;
+        }
+
         .tip {
           width: auto;
           height: 20px;
@@ -170,6 +250,11 @@ html {
       color: #fff;
       font-size: 14px;
 
+      .scroll {
+        height: 18vh;
+        overflow-y: auto;
+      }
+
       .warning {
         min-width: 3vw;
         margin-right: 6px;
@@ -206,32 +291,88 @@ html {
         line-height: 1.8;
       }
 
+      .green {
+        color: #8DC21F;
+      }
+
+      .lightblue {
+        color: #2ABADA;
+      }
+
+      .orange {
+        color: #FF4B21;
+      }
+
+      .yellow {
+        color: #F7EB00;
+      }
+
       .setting {
-        width: 4vw;
+        width: 3vw;
         margin-left: 8px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
       }
-      
+
+      .inputSent {
+        position: absolute;
+        right: 7px;
+        bottom: 7px;
+        cursor: pointer;
+      }
+    }
+
+    .tab {
+      display: flex;
+      align-items: center;
+      justify-content:space-around;
+      width: 10vw;
+      margin: 0 2px;
+      padding: .5rem;
+      border: #136A9E solid 1px;
+      background: #5a5981;
+      background: radial-gradient(circle, #5a5981 0%, #2d3f69 100%);
+      -webkit-transition: 0.2s;
+      transition: 0.2s;
+      cursor: pointer;
+
+      &:hover {
+        background: #2D3F69;
+        background: radial-gradient(circle, #2D3F69 0%, #2d3f69 100%);
+      }
+
+      &:active {
+        transform: scale(.9);
+      }
+
+      img {
+        margin-right:1rem;
+      }
+
+      span {
+        color: #2CB4E0;
+        letter-spacing: 8px;
+        font-size: 1.5rem;
+      }
     }
 
     input[type=text] {
       width: 100%;
-      padding: 12px 20px;
-      margin-top: 8px;
+      padding: 8px;
+      padding-right: 3rem;
       box-sizing: border-box;
-      border: 3px solid #ccc;
+      border: 3px solid #0a3c61;
       -webkit-transition: 0.5s;
       transition: 0.5s;
       outline: none;
+      background-color: #0a3c61;
+      color: #fff;
     }
     
     input[type=text]:focus {
-      border: 3px solid #555;
+      border: 3px solid #0d588e;
     }
-
-
   }
 }
 
